@@ -1,0 +1,123 @@
+body{
+    background-color: #e2e8dd;
+}
+.header{
+    background-color: #628a75 !important;
+}
+.copyright-footer {
+    position: fixed;
+    color: #6c757d;
+    bottom: 0;
+    width: 100%;
+    font-size: 23.5px;
+    background-color: #f5f5f5 !important;
+    line-height: 3;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(151 149 149);
+}
+#title{
+    color: white;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 42.5px;
+}
+#animal-images-strip{
+    border: 1px solid black;
+    width: fit-content;
+}
+.strip-img{
+    height: 50px;
+    width: 50px;
+    margin-left: -3.5px;
+    border: 1px solid black;
+}
+.strip-img:first-child{
+    margin-left: 0px;
+}
+#warning{
+    margin-top: 5px;
+}
+.danger{
+    color: darkred;
+}
+#start{
+    width: 135px;
+    font-size: 17px;
+}
+/*Animation*/
+#cf{
+    position: relative;
+    margin-left: -40px;
+    margin-top: 5px;
+    display: none;
+    height: fit-content;
+    width: fit-content;
+}
+#cf img{
+    position: absolute;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    height: 45px;
+    width: 45px;
+}
+#cf img{
+    animation-name: cf6FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-direction: normal;
+}
+#cf img:nth-of-type(1){
+    animation-delay: 6s;
+}
+#cf img:nth-of-type(2){
+    animation-delay: 5s;
+}
+#cf img:nth-of-type(3){
+    animation-delay: 4s;
+}
+#cf img:nth-of-type(4){
+    animation-delay: 3s;
+}
+#cf img:nth-of-type(5){
+    animation-delay: 2s;
+}
+#cf img:nth-of-type(6){
+    animation-delay: 1s;
+}
+@keyframes cf6FadeInOut {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*Animation*/
+#waiting{
+    margin-top: 5px;
+    margin-right: -7.5px;
+    display: none;
+    font-weight: 500;
+}
+#result_times_detected{
+    font-family: 'Patua One', cursive;
+    font-size: 21.5px;
+    margin-top: 15px;
+}
+#result_display{
+    font-family: 'Patua One', cursive;
+    font-size: 23.5px;
+    margin-top: -5px;
+}
+#result_img{
+    height: 325px;
+    width: 325px;
+}

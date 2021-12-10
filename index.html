@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sound Controlled Animals</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!--Imported Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+        <!--Imported Fonts-->
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+            <div class="header">
+                <br>
+                <h1 id="title">SOUND CONTROLLED ANIMALS</h1>
+                <div id="animal-images-strip">
+                    <img class="strip-img" src="Dog.png">
+                    <img class="strip-img" src="Cat.png">
+                    <img class="strip-img" src="Snake.jpg">
+                    <img class="strip-img" src="Cow.png" style="background-color: #f7f7f7;">
+                    <img class="strip-img" src="Lion.jpg">
+                    <img class="strip-img" src="Horse.png">
+                </div>
+                <label id="warning">
+                    <span class="danger">NOTE: </span>
+                    Play different sounds like barking, meowing, etc.
+                </label>
+                <br><br>
+            </div>
+            <br><br>
+            <button class="btn btn-info" onclick="startClassification()" id="start">START</button>
+            <!--Animation-->
+            <div id="cf">
+                <img class="top" src="Horse.png">
+                <img class="bottom" src="Lion.jpg">
+                <img class="top" src="Cow.png">
+                <img class="bottom" src="Snake.jpg">
+                <img class="top" src="Cat.png">
+                <img class="bottom" src="Dog.png">
+            </div>
+            <br><br>
+            <label id="waiting">Recognizing...</label>
+            <!--Animation-->
+            <p id="result_times_detected"></p>
+            <p id="result_display">Detected voice is of: <span id="result_animal_name"></span></p>
+            <img id="result_img" src="Ear.gif">
+            <div class="copyright-footer">
+                <label>Developed By: Lekhraj Jain</label>
+            </div>
+        </center>
+        <!--JS File link-->
+        <script src="main.js"></script>
+    </body>
+</html>
